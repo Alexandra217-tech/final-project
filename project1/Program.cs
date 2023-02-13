@@ -8,6 +8,15 @@ for (int i=0; i<L; i++)
     arrString[i] = newString;
 }
 
+void PrintArray (string [] coll)
+{
+    int count =coll.Length;
+    for (int j=0; j<count; j++)
+    {
+        Console.WriteLine (coll[j]);
+    }
+}
 
+PrintArray(arrString);
 
 
