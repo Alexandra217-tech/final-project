@@ -1,12 +1,21 @@
 ﻿Console.WriteLine("Введите размер массива");
 int L = Convert.ToInt32(Console.ReadLine()); 
 string[] arrString;
+string[] array;
+int len =0;
+array = new string[L];
 arrString = new string[L];
 for (int i=0; i<L; i++)
 {
     string newString = Console.ReadLine(); 
     arrString[i] = newString;
+    if (arrString[i].Length<=3)
+    {
+        len++;
+    }
 }
+
+
 
 void PrintArray (string [] coll)
 {
@@ -17,6 +26,6 @@ void PrintArray (string [] coll)
     }
 }
 
-PrintArray(arrString);
+//PrintArray(array);
 
 
