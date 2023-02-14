@@ -2,20 +2,23 @@
 int L = Convert.ToInt32(Console.ReadLine()); 
 string[] arrString;
 string[] array;
-int len =0;
-array = new string[L];
 arrString = new string[L];
+array = new string[L];
+int count =0;
 for (int i=0; i<L; i++)
 {
     string newString = Console.ReadLine(); 
     arrString[i] = newString;
-    if (arrString[i].Length<=3)
-    {
-        len++;
-    }
 }
 
-
+for (int j=0; j<L; j++)
+{
+    if (arrString[j].Length<=3)
+    {
+        array[count]=arrString[j];
+        count++;
+    }
+}
 
 void PrintArray (string [] coll)
 {
@@ -26,6 +29,8 @@ void PrintArray (string [] coll)
     }
 }
 
-//PrintArray(array);
+Console.WriteLine ();
+PrintArray(array);
+
 
 
